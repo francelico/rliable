@@ -40,15 +40,15 @@ For more details, refer to the accompanying **NeurIPS 2021** paper (**Outstandin
 
 ### Installation
 
-To install `rliable`, run:
+To install the official latest `rliable` release, run:
 ```python
 pip install -U rliable
 ```
 
-To install latest version of `rliable` as a package, run:
+To install this fork of `rliable` as a package, run:
 
 ```python
-pip install git+https://github.com/google-research/rliable
+pip install git+https://github.com/francelico/rliable
 ```
 
 To import `rliable`, we suggest:
