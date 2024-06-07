@@ -244,7 +244,10 @@ def plot_interval_estimates(point_estimates,
   if algorithms is None:
     algorithms = list(point_estimates.keys())
   num_metrics = len(point_estimates[algorithms[0]])
-  figsize = (subfigure_width * num_metrics, row_height * len(algorithms))
+  if kwargs.get('figsize', None) is None:
+      figsize = (subfigure_width * num_metrics, row_height * len(algorithms))
+  else:
+      figsize = kwargs.pop('figsize')
   fig, axes = plt.subplots(nrows=1, ncols=num_metrics, figsize=figsize)
   if colors is None:
     color_palette = sns.color_palette(color_palette, n_colors=len(algorithms))
