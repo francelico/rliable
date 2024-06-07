@@ -283,7 +283,7 @@ def plot_interval_estimates(point_estimates,
     else:
       ax.set_yticklabels(algorithms, fontsize='x-large')
     ax.set_title(metric_name, fontsize='xx-large')
-    ax.tick_params(axis='both', which='major')
+    ax.tick_params(axis='both', which='major', grid_alpha=0.)
     _decorate_axis(ax, ticklabelsize='xx-large', wrect=5)
     ax.spines['left'].set_visible(False)
     ax.grid(True, axis='x', alpha=0.25)
